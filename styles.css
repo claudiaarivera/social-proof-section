@@ -25,6 +25,17 @@ body{
     background: url('./images/bg-pattern-top-mobile.svg') top left no-repeat;
     position: relative;
     min-height: 100%;
+    animation: fade 0.8s ease-in forwards;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 body::before{
     content: '';
